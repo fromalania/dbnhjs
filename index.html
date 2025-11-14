@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Арт-Лавка — Магазин товаров для художников</title>
+    <meta name="description" content="Арт-Лавка — учебный интернет-магазин товаров для художников: холсты, краски, кисти. Сайт используется для практики по SEO, юзабилити и технической оптимизации.">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Search Console (пример, замени content на свой код) -->
+    <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE_HERE">
+
+    <!-- Google Analytics 4 (пример, замени ID на свой) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="index.html" class="logo">Арт-Лавка</a>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link active">Главная</a>
+            <a href="catalog.html" class="nav-link">Каталог</a>
+            <a href="cart.html" class="nav-link">Корзина</a>
+            <a href="#contacts" class="nav-link">Контакты</a>
+        </nav>
+        <a href="cart.html" class="cart-link">Корзина <span class="cart-count" id="cart-count">0</span></a>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-text">
+                <h1>Материалы для живописи и творчества</h1>
+                <p>
+                    Учебный интернет-магазин, на котором можно тренироваться
+                    анализировать SEO, юзабилити и техническую оптимизацию сайта
+                    на примере товаров для художников.
+                </p>
+                <a href="catalog.html" class="btn primary-btn">Перейти в каталог</a>
+            </div>
+            <div class="hero-placeholder">
+                Здесь может быть промо-изображение с холстами и красками.
+                Сейчас это заглушка для практики.
+            </div>
+        </div>
+    </section>
+
+    <section class="section-light">
+        <div class="container">
+            <h2>Что есть на сайте</h2>
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <h3>Каталог материалов</h3>
+                    <p>
+                        Несколько тестовых товаров: холсты, наборы красок, кисти —
+                        удобно для анализа карточек, фильтров и описаний.
+                    </p>
+                </article>
+                <article class="feature-card">
+                    <h3>Корзина и оформление заказа</h3>
+                    <p>
+                        Простая корзина и упрощённая форма оформления заказа,
+                        которые можно улучшать с точки зрения юзабилити.
+                    </p>
+                </article>
+                <article class="feature-card">
+                    <h3>SEO-заготовки</h3>
+                    <p>
+                        Файлы robots.txt и sitemap.xml, meta-теги, 404-страница —
+                        всё, что нужно для учебного SEO-аудита.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-categories">
+        <div class="container">
+            <h2>Популярные категории</h2>
+            <div class="category-grid">
+                <article class="category-card">
+                    <h3>Холсты</h3>
+                    <p>Грунтованные холсты разных форматов для масла и акрила.</p>
+                </article>
+                <article class="category-card">
+                    <h3>Масляные краски</h3>
+                    <p>Классические масляные краски с базовой палитрой художника.</p>
+                </article>
+                <article class="category-card">
+                    <h3>Акриловые краски</h3>
+                    <p>Быстросохнущие акрилы для экспериментов, скетчей и иллюстраций.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-light" id="contacts">
+        <div class="container contacts-grid">
+            <div>
+                <h2>Контакты (учебный блок)</h2>
+                <p>
+                    Здесь могут быть реальные контакты магазина.
+                    Сейчас блок нужен для практики форм и сценариев обратной связи.
+                </p>
+                <p>
+                    Email: <a href="mailto:art@example.com">art@example.com</a><br>
+                    Телефон: +7 (900) 000-00-00
+                </p>
+            </div>
+            <div>
+                <h3>Написать нам</h3>
+                <form id="feedback-form" class="feedback-form">
+                    <label>
+                        Имя
+                        <input type="text" name="name" placeholder="Ваше имя">
+                    </label>
+                    <label>
+                        Email
+                        <input type="email" name="email" placeholder="you@example.com">
+                    </label>
+                    <label>
+                        Сообщение
+                        <textarea name="message" rows="3" placeholder="Ваш вопрос или комментарий"></textarea>
+                    </label>
+                    <button type="submit" class="btn primary-btn">Отправить</button>
+                    <p id="form-status" class="form-status"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <p>© Арт-Лавка, 2025. Учебный проект.</p>
+        <a href="privacy.html" class="footer-link">Политика конфиденциальности</a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

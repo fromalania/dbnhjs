@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог — Арт-Лавка</title>
+    <meta name="description" content="Каталог Арт-Лавки: холсты, масляные и акриловые краски, учебные товары для анализа карточек и фильтров.">
+    <link rel="stylesheet" href="styles.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="index.html" class="logo">Арт-Лавка</a>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">Главная</a>
+            <a href="catalog.html" class="nav-link active">Каталог</a>
+            <a href="cart.html" class="nav-link">Корзина</a>
+            <a href="index.html#contacts" class="nav-link">Контакты</a>
+        </nav>
+        <a href="cart.html" class="cart-link">Корзина <span class="cart-count" id="cart-count">0</span></a>
+    </div>
+</header>
+
+<main>
+    <section class="page-header">
+        <div class="container">
+            <h1>Каталог материалов для художников</h1>
+            <p>Учебный каталог с несколькими товарами: холстами и наборами красок. Удобно для практики фильтров, поиска и карточек товара.</p>
+        </div>
+    </section>
+
+    <section class="catalog-section">
+        <div class="container">
+            <button class="btn secondary-btn catalog-filter-toggle">Фильтр</button>
+
+            <div class="catalog-filters" id="catalog-filters">
+                <div class="catalog-filters-row">
+                    <label class="catalog-filter-field">
+                        Категория
+                        <select id="category-filter">
+                            <option value="all">Все товары</option>
+                            <option value="canvas">Холсты</option>
+                            <option value="oil">Масляные краски</option>
+                            <option value="acrylic">Акриловые краски</option>
+                        </select>
+                    </label>
+                    <label class="catalog-filter-field">
+                        Поиск по названию
+                        <input type="text" id="search-input" placeholder="Например, холст или набор красок">
+                    </label>
+                </div>
+            </div>
+
+            <div class="catalog-mobile-hint">
+                На мобильных устройствах фильтры можно скрывать и показывать по кнопке «Фильтр».
+            </div>
+
+            <div class="product-grid" id="product-grid">
+                <article class="product-card" data-category="canvas" data-name="холст 40х50">
+                    <h2 class="product-title">Холст на подрамнике 40×50 см</h2>
+                    <p class="product-price">890 ₽</p>
+                    <p class="product-text">
+                        Грунтованный холст средней фактуры на деревянном подрамнике. Учебный пример товара для анализа описания.
+                    </p>
+                    <a href="product.html" class="product-link">Подробнее о товаре</a>
+                    <button class="btn primary-btn add-to-cart" data-product="canvas40" data-price="890">В корзину</button>
+                </article>
+
+                <article class="product-card" data-category="oil" data-name="масляные краски 12 цветов">
+                    <h2 class="product-title">Набор масляных красок «Классика», 12 цветов</h2>
+                    <p class="product-price">1 490 ₽</p>
+                    <p class="product-text">
+                        Базовый набор масляных красок для учебных работ. Удобен для практики карточек с характеристиками.
+                    </p>
+                    <button class="btn primary-btn add-to-cart" data-product="oilset12" data-price="1490">В корзину</button>
+                </article>
+
+                <article class="product-card" data-category="acrylic" data-name="акриловые краски 8 тюбиков">
+                    <h2 class="product-title">Набор акриловых красок «Студия», 8 тюбиков</h2>
+                    <p class="product-price">990 ₽</p>
+                    <p class="product-text">
+                        Быстросохнущие акриловые краски для экспериментов и эскизов. Учебный пример для анализа цен и описаний.
+                    </p>
+                    <button class="btn primary-btn add-to-cart" data-product="acrylic8" data-price="990">В корзину</button>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <p>© Арт-Лавка, 2025. Учебный проект.</p>
+        <a href="privacy.html" class="footer-link">Политика конфиденциальности</a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

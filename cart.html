@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина — Арт-Лавка</title>
+    <meta name="description" content="Учебная корзина интернет-магазина Арт-Лавка. Страница используется для практики юзабилити и оформления заказа.">
+    <link rel="stylesheet" href="styles.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="index.html" class="logo">Арт-Лавка</a>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">Главная</a>
+            <a href="catalog.html" class="nav-link">Каталог</a>
+            <a href="cart.html" class="nav-link active">Корзина</a>
+            <a href="index.html#contacts" class="nav-link">Контакты</a>
+        </nav>
+        <a href="cart.html" class="cart-link">Корзина <span class="cart-count" id="cart-count">0</span></a>
+    </div>
+</header>
+
+<main>
+    <section class="page-header">
+        <div class="container">
+            <h1>Корзина</h1>
+            <p>Учебная корзина магазина. Здесь можно анализировать количество шагов, видимость итоговой суммы и кнопку перехода к оформлению.</p>
+        </div>
+    </section>
+
+    <section class="cart-section">
+        <div class="container cart-grid">
+            <div class="cart-items" id="cart-items">
+                Корзина пока пуста. Добавьте товар из каталога.
+            </div>
+            <aside class="cart-summary">
+                <h2>Итого</h2>
+                <p class="cart-summary-line">Товаров: <span id="cart-total-count">0</span></p>
+                <p class="cart-summary-line">Сумма: <span id="cart-total-price">0 ₽</span></p>
+                <a href="checkout.html" class="btn primary-btn cart-checkout-btn">Перейти к оформлению</a>
+            </aside>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <p>© Арт-Лавка, 2025. Учебный проект.</p>
+        <a href="privacy.html" class="footer-link">Политика конфиденциальности</a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
